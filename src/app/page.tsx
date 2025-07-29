@@ -1,9 +1,8 @@
-import Image from 'next/image';
-
 export default function Home() {
   return (
-    <div className='font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20'>
-      <h1>Ramphok Green Tea</h1>
+    <div>
+      <h1>Welcome to the Home Page</h1>
+      <p>This is a basic component with content inside.</p>
     </div>
   );
 }
