@@ -1,8 +1,21 @@
-export default function Home() {
+import AboutUs from "@/commponents/About";
+import Banner from "@/commponents/Banner";
+import GallerySection from "@/commponents/GallerySection";
+import Product from "@/commponents/Product";
+import ProductFeature from "@/commponents/productFeature";
+import StorySection from "@/commponents/StorySection";
+
+const Home = () => {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is a basic component with content inside.</p>
-    </div>
+    <>
+      <Banner />
+      <AboutUs />
+      <Product />
+      <ProductFeature />
+      <StorySection />
+      <GallerySection />
+    </>
   );
-}
+};
+
+export default Home;
