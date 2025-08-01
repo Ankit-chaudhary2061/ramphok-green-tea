@@ -1,8 +1,21 @@
+import AboutUs from "./home/(components)/About";
+import Banner from "./home/(components)/Banner";
+import GallerySection from "./home/(components)/GallerySection";
+import Product from "./home/(components)/Product";
+import ProductFeature from "./home/(components)/productFeature";
+import StorySection from "./home/(components)/StorySection";
+
 export default function Home() {
   return (
-    <div>
-      <h1>Welcome to the Home Page</h1>
-      <p>This is a basic component with content inside.</p>
-    </div>
+    <>
+      <Banner />
+      <div className="container mx-auto">
+        <AboutUs />
+        <Product />
+        <ProductFeature />
+        <StorySection />
+        <GallerySection />
+      </div>
+    </>
   );
 }
