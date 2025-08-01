@@ -4,6 +4,7 @@ import GallerySection from "@/commponents/GallerySection";
 import Product from "@/commponents/Product";
 import ProductFeature from "@/commponents/productFeature";
 import StorySection from "@/commponents/StorySection";
+import ShowHideContent from "@/commponents/Vissible";
 
 const Home = () => {
   return (
@@ -11,6 +12,8 @@ const Home = () => {
       <Banner />
       <AboutUs />
       <Product />
+      <ShowHideContent />
+
       <ProductFeature />
       <StorySection />
       <GallerySection />
