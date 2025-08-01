@@ -1,7 +1,7 @@
 import Image from "next/image";
 const Header = () => (
   <nav className='bg-[#326E3B] '>
-    <div className='flex items-center justify-between px-[124px] py-[24.5px]'>
+    <div className='flex items-center justify-between px-[124px] py-[12px]'>
       <div>
         <Image
           src='/image/logo.png'
