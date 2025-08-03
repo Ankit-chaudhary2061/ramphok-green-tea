@@ -13,7 +13,6 @@ const Home = () => {
       <AboutUs />
       <Product />
       <ShowHideContent />
-
       <ProductFeature />
       <StorySection />
       <GallerySection />

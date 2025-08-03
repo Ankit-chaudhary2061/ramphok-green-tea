@@ -13,7 +13,7 @@ function ShowHideContent() {
         {!isVisible && (
           <button
             onClick={() => setIsVisible(true)}
-            aria-expanded={isVisible}
+            // aria-expanded={isVisible}
             className='col-start-5 col-span-4 px-4 py-2 bg-green-700 text-white rounded-md font-semibold hover:bg-green-800 transition'
           >
             View all collection
@@ -27,7 +27,7 @@ function ShowHideContent() {
               className='col-span-12 grid grid-cols-12 gap-6 mt-10'
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: 20 }}
+              exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.5 }}
             >
               {/* 1st Text + Image */}
