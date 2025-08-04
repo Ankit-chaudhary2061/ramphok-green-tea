@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar';
 
 const GallerySlider = () => {
   return (
-    <div className='px-4 py-[109px]'>
+    <div className='px-[200px] py-[109px]'>
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={30}
@@ -38,7 +38,6 @@ const GallerySlider = () => {
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide changed')}
       >
-  
         <div className='custom-prev absolute top-1/2 left-4 z-10 p-2 bg-black/50 text-white rounded-full cursor-pointer'>
           ◀
         </div>

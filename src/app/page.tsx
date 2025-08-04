@@ -1,9 +1,9 @@
 import AboutUs from "@/commponents/About";
 import Banner from "@/commponents/Banner";
-import GallerySlider from "@/commponents/GallerySection";
-import GallerySection from "@/commponents/GallerySection";
+import GallerySlider from "@/commponents/GallerySlider";
 import Product from "@/commponents/Product";
 import ProductFeature from "@/commponents/productFeature";
+import ShowHideContent from "@/commponents/ShowHideContent ";
 import StorySection from "@/commponents/StorySection";
 
 const Home = () => {
@@ -12,6 +12,7 @@ const Home = () => {
       <Banner />
       <AboutUs />
       <Product />
+      <ShowHideContent/>
       <ProductFeature />
       <StorySection />
       <GallerySlider />
