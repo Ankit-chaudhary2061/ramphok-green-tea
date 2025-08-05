@@ -8,7 +8,7 @@ const Product = () => {
           <h2 className="text-[32px] leading-[32px] font-bold">We Serve</h2>
           <div className="py-[54px] grid grid-cols-12 gap-6 items-center w-full">
             {/* Image section */}
-            <div className="col-span-5 mb-[32px] relative h-[350px]">
+            <div className="col-span-6 mb-[32px] relative h-[350px]">
               <Image
                 src="/image/rampokh-about-us.jpg"
                 alt="Green Tea"
@@ -18,7 +18,7 @@ const Product = () => {
               />
             </div>
             {/* Text content */}
-            <div className="col-start-7 col-span-5 mb-[32px]">
+            <div className="col-start-8 col-span-5 mb-[32px]">
               <h3 className="text-[32px] leading-[32px] font-bold text-[#326E3B] mb-[32px]">
                 Roasted Green Tea
               </h3>
@@ -67,7 +67,7 @@ const Product = () => {
               />
             </div>
             {/* Text content */}
-            <div className="col-start-7 col-span-5 mb-[32px]">
+            <div className="col-start-8 col-span-5 mb-[32px]">
               <h3 className="text-[32px] leading-[32px] font-bold text-[#326E3B] mb-[32px]">
                 Pearl Green Tea
               </h3>
