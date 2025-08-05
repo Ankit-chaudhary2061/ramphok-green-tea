@@ -1,8 +1,8 @@
 import AboutUs from "./home/(components)/About";
 import Banner from "./home/(components)/Banner";
-import GallerySection from "./home/(components)/GallerySection";
 import Product from "./home/(components)/Product";
 import ProductFeature from "./home/(components)/productFeature";
+import SliderGallery from "./home/(components)/SliderGallery";
 import StorySection from "./home/(components)/StorySection";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
         <Product />
         <ProductFeature />
         <StorySection />
-        <GallerySection />
+        <SliderGallery/>
       </div>
     </>
   );
