@@ -38,53 +38,48 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
   const isEven = index % 2 === 0;
 
   return (
-    <div className="grid grid-cols-12 gap-6 items-start w-full mb-8">
+    <div className='grid grid-cols-12 gap-6 items-center -full mb-8 container mx-auto'>
       {isEven ? (
         <>
-          <div className="col-span-12 md:col-span-5">
-            <div className="h-full">
-              <h3 className="text-2xl md:text-3xl font-bold text-[#326E3B] mb-8 leading-tight">
-                {product.title}
-              </h3>
-              <p className="text-base leading-7 text-gray-700">
-                {product.description}
-              </p>
-            </div>
+          <div className='col-start-1 col-span-5  '>
+            <h3 className='text-[32px] font-bold text-[#326E3B] mb-[32] leading-[32px]'>
+              {product.title}
+            </h3>
+            <p className='text-[16px] leading-[24px] text-[000000]'>
+              {product.description}
+            </p>
           </div>
-          <div className="col-span-12 md:col-span-7">
-            <div className="relative h-[300px] md:h-[419px] w-full  overflow-hidden">
+          <div className=' col-start-8 col-span-6 mb-[32px] '>
+            <div className='relative h-[510px] w-[510px]   overflow-hidden'>
               <Image
                 src={product.imageSrc}
                 alt={product.imageAlt}
                 fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                className='object-cover'
               />
             </div>
           </div>
         </>
       ) : (
         <>
-          <div className="col-span-12 md:col-span-7">
-            <div className="relative h-[300px] md:h-[419px] w-full overflow-hidden">
+          <div className='col-start-1 col-span-6 mb-[32px] '>
+            <div className='col-span-6 mb-[32px] relative h-[350px]'>
               <Image
                 src={product.imageSrc}
                 alt={product.imageAlt}
                 fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
+                className='object-cover'
+                sizes='(max-width: 768px) 100vw, 50vw'
               />
             </div>
           </div>
-          <div className="col-span-12 md:col-span-5">
-            <div className="h-full">
-              <h3 className="text-2xl md:text-3xl font-bold text-[#326E3B] mb-8 leading-tight">
-                {product.title}
-              </h3>
-              <p className="text-base leading-7 text-gray-700">
-                {product.description}
-              </p>
-            </div>
+          <div className='col-start-8 col-span-5'>
+            <h3 className='text-[32px] font-bold text-[#326E3B] mb-[32] leading-[32px]'>
+              {product.title}
+            </h3>
+            <p className='text-[16px] leading-[24px] text-[000000]'>
+              {product.description}
+            </p>
           </div>
         </>
       )}
@@ -115,15 +110,15 @@ const ShowHideProduct: React.FC = () => {
   }, [scrollPosition]);
 
   return (
-    <div className="container mx-auto px-4" ref={containerRef}>
+    <div className='container mx-auto px-4' ref={containerRef}>
       {!isVisible && (
-        <div className="flex justify-center mb-16">
+        <div className='flex justify-center mb-16'>
           <button
             onClick={handleShowMore}
-            className="bg-[#326E3B] hover:bg-[#2a5a32] text-white px-8 py-4 font-medium text-base transition-colors duration-200 flex items-center gap-2"
-            aria-label="View all product components"
+            className='bg-[#326E3B] hover:bg-[#2a5a32] text-white px-[32px] py-[16px] font-bold text-[16px] transition-colors duration-200 flex items-center gap-2'
+            aria-label='View all product components'
           >
-            View All Components
+            View More Products
           </button>
         </div>
       )}
@@ -134,19 +129,19 @@ const ShowHideProduct: React.FC = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.6, ease: "easeInOut" }}
+            transition={{ duration: 0.6, ease: 'easeInOut' }}
           >
-            <div className="mb-8">
+            <div className='mb-8'>
               {PRODUCTS.map((product, index) => (
                 <ProductCard key={product.id} product={product} index={index} />
               ))}
             </div>
 
-            <div className="flex justify-center mb-16">
+            <div className='flex justify-center mb-16'>
               <button
                 onClick={handleShowLess}
-                className="bg-red-600 hover:bg-red-700 text-white px-8 py-4  font-medium text-base transition-colors duration-200 flex items-center gap-2"
-                aria-label="Show less product components"
+                className='bg-red-600 hover:bg-red-700 text-white px-[32px] py-[16px] font-bold text-[16px]transition-colors duration-200 flex items-center gap-2'
+                aria-label='Show less product components'
               >
                 Show Less
               </button>
