@@ -24,7 +24,7 @@ const AboutUs = () => {
           </p>
 
           <button className="bg-[#326E3B] hover:bg-green-800 transition">
-            <h2 className="py-[16px] px-[32px] text-[16px] font-bold text-[FFFFFF]">
+            <h2 className="py-[16px] px-[32px] text-[16px] font-bold text-white">
               Learn More
             </h2>
           </button>

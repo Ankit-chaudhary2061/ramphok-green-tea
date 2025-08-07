@@ -4,7 +4,7 @@
 :root {
   /* Color Scheme */
   --background: #ffffff;
-  --foreground: #171717;
+  /* --foreground: #171717; */
 
   /* Font Families */
   --font-primary: "Merriweather", serif; /* For headings */
