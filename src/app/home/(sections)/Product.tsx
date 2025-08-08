@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Product = () => {
   return (
-    <div className="pt-[64px] container mx-auto">
+    <div className="bg-gray-300 container mx-auto">
       <div className="grid grid-cols-12 gap-6 items-start w-full">
         <div className="col-span-12">
           <h2 className="text-[32px] leading-[32px] font-bold">We Serve</h2>

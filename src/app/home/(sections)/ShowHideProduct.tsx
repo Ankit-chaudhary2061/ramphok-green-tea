@@ -38,7 +38,7 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
   const isEven = index % 2 === 0;
 
   return (
-    <div className='grid grid-cols-12 gap-6 items-center -full mb-8 container mx-auto'>
+    <div className='grid grid-cols-12 gap-6  bg-gray-300 items-center -full mb-8 container mx-auto'>
       {isEven ? (
         <>
           <div className='col-start-1 col-span-5  '>
