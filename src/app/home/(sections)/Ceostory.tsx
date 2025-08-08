@@ -3,8 +3,8 @@ import Image from "next/image";
 const StorySection = () => {
   return (
     <>
-      <div className="py-[100px] pl-[156px]">
-        <div className='container mx-auto'>
+      <div className='container mx-auto'>
+        <div className='py-[100px] '>
           <div className='grid grid-cols-12 gap-6 items-start w-full'>
             <div className='col-span-5 self-center'>
               <h2 className='text-[32px] leading-[32px] text-[000000] font-bold'>
@@ -36,7 +36,7 @@ const StorySection = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> 
     </>
   );
 };
