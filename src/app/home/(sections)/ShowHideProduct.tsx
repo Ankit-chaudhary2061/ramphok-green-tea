@@ -38,7 +38,7 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
   const isEven = index % 2 === 0;
 
   return (
-    <div className='grid grid-cols-12 gap-6  bg-gray-300 items-center -full mb-8 container mx-auto'>
+    <div className='grid grid-cols-12 gap-6  bg-[DFDADA] px-[155px] items-center -full mb-8 container mx-auto'>
       {isEven ? (
         <>
           <div className='col-start-1 col-span-5  '>
@@ -50,12 +50,13 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
             </p>
           </div>
           <div className=' col-start-8 col-span-6 mb-[32px] '>
-            <div className='relative h-[510px] w-[510px]   overflow-hidden'>
+            <div className='relative h-[350px] overflow-hidden'>
               <Image
                 src={product.imageSrc}
                 alt={product.imageAlt}
                 fill
                 className='object-cover'
+                sizes='(max-width: 768px) 100vw, 50vw'
               />
             </div>
           </div>
@@ -140,7 +141,7 @@ const ShowHideProduct: React.FC = () => {
             <div className='flex justify-center mb-16'>
               <button
                 onClick={handleShowLess}
-                className='bg-red-600 hover:bg-red-700 text-white px-[32px] py-[16px] font-bold text-[16px]transition-colors duration-200 flex items-center gap-2'
+                className='bg-[#326E3B] hover:bg-[#2a5a32]  text-white px-[32px] py-[16px] font-bold text-[16px]transition-colors duration-200 flex items-center gap-2'
                 aria-label='Show less product components'
               >
                 Show Less
