@@ -2,12 +2,12 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[60vh] relative">
+    <div  className='w-full h-[60vh] relative'>
       <Image
-        src="/image/tea-garden-banner.jpg"
-        alt="tea-garden"
+        src='/image/tea-garden-banner.jpg'
+        alt='tea-garden'
         fill
-        className="object-cover"
+        className='object-cover'
         priority
       />
     </div>

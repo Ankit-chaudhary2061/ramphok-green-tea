@@ -36,7 +36,7 @@ const StorySection = () => {
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </>
   );
 };
