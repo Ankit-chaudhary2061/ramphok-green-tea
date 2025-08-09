@@ -11,15 +11,15 @@ import SliderGallery from "./home/(sections)/SliderGallery";
 export default function Home() {
   return (
     <>
-      <Banner />
-      <div>
+      
+        <Banner />
         <AboutUs />
         <Product />
         <ShowHideContent />
         <ProductFeature />
-        <StorySection/>
+        <StorySection />
         <SliderGallery />
-      </div>
+  
     </>
   );
 }
