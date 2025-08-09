@@ -1,5 +1,3 @@
-
-
 const About = () => {
   return (
     <div className='min-h-screen bg-white px-4 py-16'>
@@ -13,9 +11,9 @@ const About = () => {
           is handpicked and crafted to bring you calm, clarity, and vitality.
           <br />
           <br />
-          Whether you're a tea lover or just starting your wellness journey,
-          we're here to share the story, purity, and power of green tea — one
-          cup at a time.
+          Whether you&apos;re a tea lover or just starting your wellness
+          journey, we&apos;re here to share the story, purity, and power of
+          green tea — one cup at a time.
         </p>
       </div>
     </div>
