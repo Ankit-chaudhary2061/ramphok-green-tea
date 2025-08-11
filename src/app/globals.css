@@ -4,7 +4,7 @@
 :root {
   /* Color Scheme */
   --background: #ffffff;
-  --foreground: #171717;
+  
 
   /* Font Families */
   --font-primary: "Merriweather", serif; /* For headings */
@@ -12,7 +12,7 @@
 
   /* Tailwind-style Custom Tokens */
   --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* --color-foreground: var(--foreground); */
   --font-sans: var(--font-secondary); /* Map to Inter */
   --font-serif: var(--font-primary); /* Map to Merriweather */
 }
@@ -42,7 +42,7 @@ p {
 
 body {
   background: var(--background);
-  color: var(--foreground);
+  /* color: var(--foreground); */
 }
 
 /* Container styles */
