@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const AboutUs = () => {
   return (
-    <div className='py-[100px] px-[156px] '>
-      <div className='container mx-auto'>
+    <div className='container mx-auto'>
+      <div className='py-[100px] px-[156px] '>
         <div className='grid grid-cols-12 gap-6 items-start w-full'>
           <div className='col-span-6'>
             <h2 className='text-[40px] leading-[40px]  font-bold'>Discover</h2>
@@ -26,12 +26,12 @@ const AboutUs = () => {
             </p>
 
             <button className='bg-[#326E3B] hover:bg-green-800 transition'>
-              <h2 className='py-[16px] px-[32px] text-[16px] font-bold text-[FFFFFF]'>
+              <h2 className='py-[16px] px-[32px] text-[16px] font-bold text-white'>
                 Learn More
               </h2>
             </button>
           </div>
-          <div className='col-span-1'></div>
+          
           <div className='col-span-5 self-center w-full'>
             <Image
               src='/image/rampokh-about-us.jpg'
