@@ -1,14 +1,28 @@
-import Image from "next/image";
+'use client'
 
+import Image from "next/image";
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const Product = () => {
+  useEffect(()=>{
+   AOS.init({
+            duration: 1000, // animation duration in ms
+            once: true, // animation happens only once
+            offset: 100, // distance before triggering animation
+          });
+        },[])
   return (
     <div className='container mx-auto'>
       <div className='bg-[rgb(247,244,244)]  pt-[64px] '>
         <div className='grid grid-cols-12 gap-6 items-start w-full'>
-          <div className='col-span-12'>
+          <div className='col-span-12' data-aos='zoom-in-up'>
             <h2 className='text-[32px] leading-[32px] font-bold'>We Serve</h2>
-            <div className='py-[54px] grid grid-cols-12 gap-6 items-center w-full'>
+            <div
+              className='py-[54px] grid grid-cols-12 gap-6 items-center w-full'
+              data-aos='zoom-in-up'
+            >
               {/* Image section */}
               <div className='col-span-6 mb-[32px] relative h-[350px]'>
                 <Image
@@ -20,7 +34,10 @@ const Product = () => {
                 />
               </div>
               {/* Text content */}
-              <div className='col-start-8 col-span-5 mb-[32px]'>
+              <div
+                className='col-start-8 col-span-5 mb-[32px]'
+                data-aos='zoom-in-up'
+              >
                 <h3 className='text-[32px] leading-[32px] font-bold text-[#326E3B] mb-[32px]'>
                   Roasted Green Tea
                 </h3>
@@ -35,7 +52,7 @@ const Product = () => {
               </div>
 
               {/* Text content */}
-              <div className=' col-span-5 mb-[32px]'>
+              <div className=' col-span-5 mb-[32px]' data-aos='zoom-in-up'>
                 <h3 className='text-[32px] leading-[32px] font-bold text-[#326E3B] mb-[32px]'>
                   Orthodox Black Tea
                 </h3>
@@ -49,7 +66,10 @@ const Product = () => {
                 </p>
               </div>
               {/* Image section */}
-              <div className='col-start-7 col-span-6 mb-[32px] relative h-[350px]'>
+              <div
+                className='col-start-7 col-span-6 mb-[32px] relative h-[350px]'
+                data-aos='zoom-in-up'
+              >
                 <Image
                   src='/image/rampokh-about-us.jpg'
                   alt='Green Tea'
@@ -59,7 +79,10 @@ const Product = () => {
                 />
               </div>
               {/* Image section */}
-              <div className='col-span-6 mb-[32px] relative h-[350px]'>
+              <div
+                className='col-span-6 mb-[32px] relative h-[350px]'
+                data-aos='zoom-in-up'
+              >
                 <Image
                   src='/image/rampokh-about-us.jpg'
                   alt='Green Tea'
@@ -69,7 +92,10 @@ const Product = () => {
                 />
               </div>
               {/* Text content */}
-              <div className='col-start-8 col-span-5 mb-[32px]'>
+              <div
+                className='col-start-8 col-span-5 mb-[32px]'
+                data-aos='zoom-in-up'
+              >
                 <h3 className='text-[32px] leading-[32px] font-bold text-[#326E3B] mb-[32px]'>
                   Pearl Green Tea
                 </h3>
