@@ -9,11 +9,19 @@ import {
 
 import "swiper/css";
 import "swiper/css/navigation";
-;
-
+import AOS from 'aos'
+import { useEffect } from "react";
+import "aos/dist/aos.css"; 
 const SliderGallery = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration:1000,
+      once:true,
+      offset:100
+    })
+  })
   return (
-    <div className='container mx-auto '>
+    <div className='container mx-auto ' data-aos='zoom-in-up'>
       <div className='pb-[109px]'>
         <div className='relative h-[419px]'>
           {/* Buttons centered vertically at 419px height */}

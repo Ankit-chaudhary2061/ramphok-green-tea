@@ -1,12 +1,24 @@
+"use client"; // if you're in Next.js App Router
+
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; //
 import Image from "next/image";
 
 const StorySection = () => {
+    useEffect(() => {
+         AOS.init({
+           duration: 1000, // animation duration in ms
+           once: true, // animation happens only once
+           offset: 100, // distance before triggering animation
+         });
+       }, []);
   return (
     <>
       <div className='container mx-auto'>
         <div className='py-[100px] '>
           <div className='grid grid-cols-12 gap-6 items-start w-full'>
-            <div className='col-span-5 self-center'>
+            <div className='col-span-5 self-center' data-aos='zoom-in-up'>
               <h2 className='text-[32px] leading-[32px] text-[000000] font-bold'>
                 Story We Share
               </h2>
@@ -25,7 +37,7 @@ const StorySection = () => {
                 </p>
               </button>
             </div>
-            <div className='col-start-7 col-span-6'>
+            <div className='col-start-7 col-span-6' data-aos='zoom-in-up'>
               <Image
                 src='/image/rampokh-about-us.jpg'
                 alt='Green Tea'

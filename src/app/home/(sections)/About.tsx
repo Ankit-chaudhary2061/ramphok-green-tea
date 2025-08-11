@@ -1,12 +1,23 @@
+"use client"; // if you're in Next.js App Router
 
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; //
 import Image from "next/image";
 
 const AboutUs = () => {
+     useEffect(() => {
+       AOS.init({
+         duration: 1000, // animation duration in ms
+         once: true, // animation happens only once
+         offset: 100, // distance before triggering animation
+       });
+     }, []);
   return (
     <div className='container mx-auto'>
-      <div className='py-[100px] px-[156px] '>
+      <div className='py-[100px] '>
         <div className='grid grid-cols-12 gap-6 items-start w-full'>
-          <div className='col-span-6'>
+          <div className='col-span-6' data-aos='zoom-in-up'>
             <h2 className='text-[40px] leading-[40px]  font-bold'>Discover</h2>
             <h2 className='text-[#326E3B] leading-[40px] text-[40px] font-bold'>
               Ramfok Green
@@ -31,8 +42,8 @@ const AboutUs = () => {
               </h2>
             </button>
           </div>
-          
-          <div className='col-span-5 self-center w-full'>
+
+          <div className=' col-start-8 col-span-5 self-center w-full' data-aos='zoom-in-up'>
             <Image
               src='/image/rampokh-about-us.jpg'
               alt='Green Tea'

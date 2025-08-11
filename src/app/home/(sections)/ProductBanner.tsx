@@ -1,9 +1,21 @@
+'use client'
+
 import Image from "next/image";
+import AOS from "aos";
+import { useEffect } from "react";
+import "aos/dist/aos.css"; //
 
 const ProductFeature = () => {
+  useEffect(()=>{
+    AOS.init({
+      duration: 1000, // animation duration in ms
+      once: true, // animation happens only once
+      offset: 100,
+    });
+  },[])
   return (
     <>
-      <div className='w-full'>
+      <div className='w-full' data-aos='zoom-in-up'>
         <Image
           src='/image/Flavor-from-illam.png'
           alt='GreenTea garden'
