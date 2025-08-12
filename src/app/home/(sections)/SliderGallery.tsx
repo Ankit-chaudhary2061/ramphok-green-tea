@@ -26,13 +26,13 @@ const SliderGallery = () => {
         <div className='relative h-[419px]'>
           {/* Buttons centered vertically at 419px height */}
           <button
-            className='swiper-button-prev-custom absolute left-3 top-1/2 -translate-y-1/2 z-10 p-3 bg-gray-300 bg-opacity-60 rounded-full shadow-md hover:bg-gray-400 hover:bg-opacity-90 transition'
+            className='swiper-button-prev-custom absolute left-2 top-1/2 -translate-y-1/2 z-10 p-3 bg-gray-300 bg-opacity-60 rounded-full shadow-md hover:bg-gray-400 hover:bg-opacity-90 transition'
             aria-label='Previous Slide'
           >
             ❮
           </button>
           <button
-            className='swiper-button-next-custom absolute right-3 top-1/2 -translate-y-1/2 z-10 p-3 bg-gray-300 bg-opacity-60 rounded-full shadow-md hover:bg-gray-400 hover:bg-opacity-90 transition'
+            className='swiper-button-next-custom absolute right-2 top-1/2 -translate-y-1/2 z-10 p-3 bg-gray-300 bg-opacity-60 rounded-full shadow-md hover:bg-gray-400 hover:bg-opacity-90 transition'
             aria-label='Next Slide'
           >
             ❯

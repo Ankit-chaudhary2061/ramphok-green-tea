@@ -40,54 +40,56 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
   const isEven = index % 2 === 0;
 
   return (
-    <div className='grid grid-cols-12 gap-6  bg-[rgb(247,244,244)] px-[155px] items-center -full mb-8 container mx-auto'>
-      {isEven ? (
-        <>
-          <div className='col-start-1 col-span-5  ' data-aos='zoom-in-up'>
-            <h3 className='text-[32px] font-bold text-[#326E3B] mb-[32] leading-[32px]'>
-              {product.title}
-            </h3>
-            <p className='text-[16px] leading-[24px] text-[000000]'>
-              {product.description}
-            </p>
-          </div>
-          <div
-            className='col-start-7 col-span-6 mb-[32px] relative h-[350px]'
-            data-aos='zoom-in-up'
-          >
-            <Image
-              src='/image/rampokh-about-us.jpg'
-              alt='Green Tea'
-              className='object-cover'
-              fill
-              sizes='(max-width: 768px) 100vw, 50vw'
-            />
-          </div>
-        </>
-      ) : (
-        <>
-          <div
-            className='col-span-6 mb-[32px] relative h-[350px]'
-            data-aos='zoom-in-up'
-          >
-            <Image
-              src='/image/rampokh-about-us.jpg'
-              alt='Green Tea'
-              className='object-cover'
-              fill
-              sizes='(max-width: 768px) 100vw, 50vw'
-            />
-          </div>
-          <div className='col-start-8 col-span-5' data-aos='zoom-in-up'>
-            <h3 className='text-[32px] font-bold text-[#326E3B] mb-[32] leading-[32px]'>
-              {product.title}
-            </h3>
-            <p className='text-[16px] leading-[24px] text-[000000]'>
-              {product.description}
-            </p>
-          </div>
-        </>
-      )}
+    <div className='bg-[rgb(247,244,244)] w-full '>
+      <div className='grid grid-cols-12 gap-6  bg-[rgb(247,244,244)]  items-center -full mb-8 container mx-auto'>
+        {isEven ? (
+          <>
+            <div className='col-start-1 col-span-5  ' data-aos='zoom-in-up'>
+              <h3 className='text-[32px] font-bold text-[#326E3B] mb-[32] leading-[32px]'>
+                {product.title}
+              </h3>
+              <p className='text-[16px] leading-[24px] text-[000000]'>
+                {product.description}
+              </p>
+            </div>
+            <div
+              className='col-start-7 col-span-6 mb-[32px] relative h-[350px]'
+              data-aos='zoom-in-up'
+            >
+              <Image
+                src='/image/rampokh-about-us.jpg'
+                alt='Green Tea'
+                className='object-cover'
+                fill
+                sizes='(max-width: 768px) 100vw, 50vw'
+              />
+            </div>
+          </>
+        ) : (
+          <>
+            <div
+              className='col-span-6 mb-[32px] relative h-[350px]'
+              data-aos='zoom-in-up'
+            >
+              <Image
+                src='/image/rampokh-about-us.jpg'
+                alt='Green Tea'
+                className='object-cover'
+                fill
+                sizes='(max-width: 768px) 100vw, 50vw'
+              />
+            </div>
+            <div className='col-start-8 col-span-5' data-aos='zoom-in-up'>
+              <h3 className='text-[32px] font-bold text-[#326E3B] mb-[32] leading-[32px]'>
+                {product.title}
+              </h3>
+              <p className='text-[16px] leading-[24px] text-[000000]'>
+                {product.description}
+              </p>
+            </div>
+          </>
+        )}
+      </div>
     </div>
   );
 };
@@ -121,54 +123,63 @@ const ShowHideProduct: React.FC = () => {
   }, [scrollPosition]);
 
   return (
-    <div className='container mx-auto'>
-      <div
-        data-aos='zoom-in-up'
-        className=' bg-[rgb(247,244,244)]   px-4'
-        ref={containerRef}
-      >
-        {!isVisible && (
-          <div className='flex justify-center pb-[62px]' data-aos='zoom-in-up'>
-            <button
-              onClick={handleShowMore}
-              className='bg-[#326E3B] hover:bg-[#2a5a32] text-white px-[32px] py-[16px] font-bold text-[16px] transition-colors duration-200 flex items-center gap-2'
-              aria-label='View all product components'
-            >
-              View More Products
-            </button>
-          </div>
-        )}
-      </div>
-
-      <AnimatePresence>
-        {isVisible && (
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: 50 }}
-            transition={{ duration: 0.6, ease: 'easeInOut' }}
-          >
-            <div className=''>
-              {PRODUCTS.map((product, index) => (
-                <ProductCard key={product.id} product={product} index={index} />
-              ))}
-            </div>
-
+    <div className='bg-[rgb(247,244,244)] w-full '>
+      <div className='container mx-auto'>
+        <div
+          data-aos='zoom-in-up'
+          className=' bg-[rgb(247,244,244)]   px-4'
+          ref={containerRef}
+        >
+          {!isVisible && (
             <div
-              className=' bg-[rgb(247,244,244)] flex justify-center pb-[62px] '
+              className='flex justify-center pb-[62px]'
               data-aos='zoom-in-up'
             >
               <button
-                onClick={handleShowLess}
-                className='bg-[#326E3B] hover:bg-[#2a5a32]  text-white px-[32px] py-[16px] font-bold text-[16px]transition-colors duration-200 flex items-center gap-2'
-                aria-label='Show less product components'
+                onClick={handleShowMore}
+                className='bg-[#326E3B] hover:bg-[#2a5a32] text-white px-[32px] py-[16px] font-bold text-[16px] transition-colors duration-200 flex items-center gap-2'
+                aria-label='View all product components'
               >
-                Show Less
+                View More Products
               </button>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </div>
+
+        <AnimatePresence>
+          {isVisible && (
+            <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 50 }}
+              transition={{ duration: 0.6, ease: 'easeInOut' }}
+            >
+              <div className=''>
+                {PRODUCTS.map((product, index) => (
+                  <ProductCard
+                    key={product.id}
+                    product={product}
+                    index={index}
+                  />
+                ))}
+              </div>
+
+              <div
+                className=' bg-[rgb(247,244,244)] flex justify-center pb-[62px] '
+                data-aos='zoom-in-up'
+              >
+                <button
+                  onClick={handleShowLess}
+                  className='bg-[#326E3B] hover:bg-[#2a5a32]  text-white px-[32px] py-[16px] font-bold text-[16px]transition-colors duration-200 flex items-center gap-2'
+                  aria-label='Show less product components'
+                >
+                  Show Less
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
     </div>
   );
 };
