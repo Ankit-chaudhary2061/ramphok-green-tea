@@ -9,7 +9,7 @@ const StorySection = () => {
     useEffect(() => {
          AOS.init({
            duration: 1000, // animation duration in ms
-           once: true, // animation happens only once
+           once: false, // animation happens only once
            offset: 100, // distance before triggering animation
          });
        }, []);

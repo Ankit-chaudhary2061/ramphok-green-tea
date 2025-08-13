@@ -97,7 +97,7 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
 const ShowHideProduct: React.FC = () => {
   useEffect(()=>{
     AOS.init
-      ({ duration: 800, once: true });
+      ({ duration: 800, once: false });
   }, []);
     
   
