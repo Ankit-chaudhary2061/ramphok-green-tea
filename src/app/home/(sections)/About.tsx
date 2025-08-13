@@ -15,8 +15,8 @@ const AboutUs = () => {
      }, []);
   return (
     <div className='container mx-auto'>
-      <div className='py-[100px] '>
-        <div className='grid grid-cols-12 gap-6 items-start w-full'>
+      <div className=' px-[33px] py-[100px]'>
+        <div className='grid grid-cols-12 gap-6 items-center w-full'>
           <div className='col-span-6' data-aos='zoom-in-up'>
             <h2 className='text-[40px] leading-[40px]  font-bold'>Discover</h2>
             <h2 className='text-[#326E3B] leading-[40px] text-[40px] font-bold'>
@@ -43,15 +43,16 @@ const AboutUs = () => {
             </button>
           </div>
 
-          <div className=' col-start-8 col-span-5 self-center w-full' data-aos='zoom-in-up'>
+          <div
+            className='col-start-8 col-span-5 relative h-[350px]'
+            data-aos='zoom-in-up'
+          >
             <Image
               src='/image/rampokh-about-us.jpg'
               alt='Green Tea'
-              className='object-cover w-full h-auto'
-              width={0}
-              height={0}
-              sizes='100vw'
-              style={{ width: '100%', height: 'auto' }}
+              className='object-cover'
+              fill
+              sizes='(max-width: 768px) 100vw, 50vw'
             />
           </div>
         </div>

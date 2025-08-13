@@ -14,10 +14,9 @@ const Product = () => {
           });
         },[])
   return (
-
     <div className='bg-[rgb(247,244,244)] w-full '>
       <div className='container mx-auto '>
-        <div className='pt-[64px] '>
+        <div className='pt-[64px] px-[33px] '>
           <div className='grid grid-cols-12 gap-6 items-start w-full'>
             <div className='col-span-12' data-aos='zoom-in-up'>
               <h2 className='text-[32px] leading-[32px] font-bold'>We Serve</h2>
