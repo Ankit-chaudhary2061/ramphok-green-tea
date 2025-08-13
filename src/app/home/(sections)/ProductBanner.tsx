@@ -8,9 +8,9 @@ import 'aos/dist/aos.css';
 const ProductFeature = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
-      once: false, // allow animation when scrolling up & down
-      offset: 100, // trigger distance before entering view
+      duration: 1000,
+      once: false, 
+      offset: 100, 
     });
   }, []);
 
