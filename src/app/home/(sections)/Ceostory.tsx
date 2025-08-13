@@ -16,7 +16,7 @@ const StorySection = () => {
   return (
     <>
       <div className='container mx-auto'>
-        <div className='py-[100px] '>
+        <div className='py-[100px] px-[33px]'>
           <div className='grid grid-cols-12 gap-6 items-start w-full'>
             <div className='col-span-5 self-center' data-aos='zoom-in-up'>
               <h2 className='text-[32px] leading-[32px] text-[000000] font-bold'>

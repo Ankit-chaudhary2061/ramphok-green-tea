@@ -127,12 +127,12 @@ const ShowHideProduct: React.FC = () => {
       <div className='container mx-auto'>
         <div
           data-aos='zoom-in-up'
-          className=' bg-[rgb(247,244,244)]   px-4'
+          className=' bg-[rgb(247,244,244)]   px-[33px]'
           ref={containerRef}
         >
           {!isVisible && (
             <div
-              className='flex justify-center pb-[62px]'
+              className='flex justify-center px-[33px] pb-[62px]'
               data-aos='zoom-in-up'
             >
               <button
@@ -165,7 +165,7 @@ const ShowHideProduct: React.FC = () => {
               </div>
 
               <div
-                className=' bg-[rgb(247,244,244)] flex justify-center pb-[62px] '
+                className=' bg-[rgb(247,244,244)] flex justify-center px-[33px] pb-[62px] '
                 data-aos='zoom-in-up'
               >
                 <button
