@@ -6,6 +6,7 @@ import Product from "./home/(sections)/Product";
 import ProductFeature from "./home/(sections)/ProductBanner";
 import ShowHideContent from "./home/(sections)/ShowHideProduct";
 import SliderGallery from "./home/(sections)/SliderGallery";
+import Supplier from "./home/(sections)/Supplier";
 
 
 export default function Home() {
@@ -18,7 +19,8 @@ export default function Home() {
         <ShowHideContent />
         <ProductFeature />
         <StorySection />
-        <SliderGallery />
+        {/* <SliderGallery /> */}
+        <Supplier/>
   
     </>
   );
