@@ -91,7 +91,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className='w-full bg-[#326E3B]'>
-      <div className='container mx-auto grid grid-cols-12 gap-6 px-[200px]'>
+      <div className=' grid grid-cols-12 gap-6 px-[200px]'>
         {/* Logo Section */}
 
         <div className=' col-start-1 col-span-4 pt-[24px] flex gap-[8px]'>
@@ -107,19 +107,26 @@ const Footer = () => {
             Ramphok Green Tea & Agro Processing Ind.
           </span>
         </div>
-        <div className='pt-[24px] text-[14px] leading-[14px] text-[#ffff] font-normal flex gap-[16px] col-start-7 col-span-3'>
+        <div className='pt-[24px]  text-[14px] text-center leading-[14px] text-[#ffff] font-normal flex gap-[16px] col-start-6 col-span-4'>
           <span>
             <Link href='/'>Home</Link>
           </span>
           <span>
-            <Link href='/about'>About Us</Link>
+            <Link href='/About'>About Us</Link>
           </span>
           <span>
-            <Link href='/contact'>Contact Us</Link>
+            <Link href='/Contact'>Contact Us</Link>
           </span>
         </div>
-        <div className='tex-[14px]  pt-[24px] leading-[14px] font-normal text-[#ffff] col-start-11 col-span-2'>
-          info@compay.com
+        <div className='text-[14px] pt-[24px] text-center leading-[20px] font-normal text-white col-start-11 col-span-2'>
+          <a
+            href='https://mail.google.com/mail/?view=cm&fs=1&to=shresthathakur@gmail.com'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:underline hover:text-green-300 transition-colors'
+          >
+            info@company.com
+          </a>
         </div>
         {/* Divider Line */}
         <div className='col-span-12 relative '>
@@ -127,7 +134,7 @@ const Footer = () => {
         </div>
 
         {/* Copyright Text */}
-        <p className='col-start-4 col-span-6 pb-[24px]  text-[16px] leading-[16px] text-[#ffff] font-normal'>
+        <p className='col-start-4 col-span-6 pb-[24px] text-center  text-[16px] leading-[16px] text-[#ffff] font-normal'>
           © 2025 Ramphok Green Tea & Agro Processing Ind. All Rights Reserved.
         </p>
       </div>
