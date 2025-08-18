@@ -165,7 +165,7 @@ const ShowHideProduct: React.FC = () => {
               </div>
 
               <div
-                className=' bg-[rgb(247,244,244)] flex justify-center px-[33px] pb-[62px] '
+                className='  flex justify-center px-[33px] pb-[62px] '
                 data-aos='zoom-in-up'
               >
                 <button

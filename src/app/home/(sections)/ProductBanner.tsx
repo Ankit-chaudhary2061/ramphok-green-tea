@@ -15,18 +15,32 @@ const ProductFeature = () => {
   }, []);
 
   return (
-    <section className='w-full  py-12 px-1'>
+    <section className='relative w-full '>
       <div
-        className='max-w-[1440px] mx-auto rounded-2xl overflow-hidden shadow-lg'
+        className='relative max-w-[1440px] h-[400px] " mx-auto'
         data-aos='zoom-in-up'
       >
+        {/* Background Image */}
         <Image
-          src='/image/Flavor-from-illam.png'
+          src='/images/picking-tea.jpg'
           alt='GreenTea garden'
-          width={1440}
-          height={365}
-          className='w-full h-auto object-cover'
+          fill
+          className='object-cover '
         />
+
+        {/* Overlay (dark shade for better text visibility) */}
+        <div className='absolute inset-0 bg-black/30 rounded-xl'></div>
+
+        {/* Text Content */}
+        <div className='absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4'>
+          <h2 className='text-3xl md:text-5xl font-bold'>
+            Fresh from the Tea Gardens of Ilam
+          </h2>
+          <p className='mt-4 text-lg md:text-xl font-medium text-white max-w-2xl'>
+            Experience the finest hand-picked green tea leaves, straight from
+            nature's heart.
+          </p>
+        </div>
       </div>
     </section>
   );
