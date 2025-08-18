@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Merriweather } from "next/font/google";
 import Header from "@/commponents/header";
 import "./globals.css";
+import Footer from "@/commponents/footer";
 
 const merriweather = Merriweather({
   subsets: ['latin'],
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         {<Header/>}
         {children}
+        {<Footer/>}
       </body>
     </html>
   );
