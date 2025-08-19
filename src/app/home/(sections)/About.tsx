@@ -15,7 +15,7 @@ const AboutUs = () => {
      }, []);
   return (
     <div className='container mx-auto'>
-      <div className=' px-[33px] py-[100px]'>
+      <div className=' px-[27px] py-[100px]'>
         <div className='grid grid-cols-12 gap-6 items-center w-full'>
           <div className='col-span-6' data-aos='zoom-in-up'>
             <h2 className='text-[40px] leading-[40px]  font-bold'>Discover</h2>
@@ -36,15 +36,15 @@ const AboutUs = () => {
               soothes the body and mind.
             </p>
 
-            <button className='bg-[#326E3B] hover:bg-green-800 transition'>
-              <h2 className='py-[16px] px-[32px] text-[16px] font-bold text-white'>
+            <button className='bg-[#326E3B] hover:bg-green-800 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg cursor-pointer'>
+              <h2 className='py-[16px] px-[32px] text-[16px] font-bold text-white text-center'>
                 Learn More
               </h2>
             </button>
           </div>
 
           <div
-            className='col-start-8 col-span-5 relative h-[350px]'
+            className='col-start-8 col-span-5 relative h-[350px]  rounded-xl overflow-hidden'
             data-aos='zoom-in-up'
           >
             <Image

@@ -41,7 +41,7 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
 
   return (
     <div className='bg-[rgb(247,244,244)] w-full '>
-      <div className='grid grid-cols-12 gap-6  bg-[rgb(247,244,244)]  items-center -full mb-8 container mx-auto'>
+      <div className='grid grid-cols-12 gap-6  bg-[rgb(247,244,244)]  items-center -full mb-8 container mx-auto px-[27px]'>
         {isEven ? (
           <>
             <div className='col-start-1 col-span-5  ' data-aos='zoom-in-up'>
@@ -53,7 +53,7 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
               </p>
             </div>
             <div
-              className='col-start-7 col-span-6 mb-[32px] relative h-[350px]'
+              className='col-start-7 col-span-6 mb-[32px] relative h-[350px] rounded-xl overflow-hidden'
               data-aos='zoom-in-up'
             >
               <Image
@@ -68,7 +68,7 @@ const ProductCard: React.FC<{ product: ProductData; index: number }> = ({
         ) : (
           <>
             <div
-              className='col-span-6 mb-[32px] relative h-[350px]'
+              className='col-span-6 mb-[32px] relative h-[350px] rounded-xl overflow-hidden'
               data-aos='zoom-in-up'
             >
               <Image
@@ -125,11 +125,7 @@ const ShowHideProduct: React.FC = () => {
   return (
     <div className='bg-[rgb(247,244,244)] w-full '>
       <div className='container mx-auto'>
-        <div
-          data-aos='zoom-in-up'
-          className=' bg-[rgb(247,244,244)]   px-[33px]'
-          ref={containerRef}
-        >
+        <div data-aos='zoom-in-up' className='  px-[33px]' ref={containerRef}>
           {!isVisible && (
             <div
               className='flex justify-center px-[33px] pb-[62px]'
@@ -137,7 +133,7 @@ const ShowHideProduct: React.FC = () => {
             >
               <button
                 onClick={handleShowMore}
-                className='bg-[#326E3B] hover:bg-[#2a5a32] text-white px-[32px] py-[16px] font-bold text-[16px] transition-colors duration-200 flex items-center gap-2'
+                className='bg-[#326E3B] hover:bg-[#2a5a32] text-white px-[32px] py-[16px] font-bold text-[16px] transition-colors duration-200 flex items-center gap-2 rounded-md cursor-pointer'
                 aria-label='View all product components'
               >
                 View More Products
@@ -170,7 +166,7 @@ const ShowHideProduct: React.FC = () => {
               >
                 <button
                   onClick={handleShowLess}
-                  className='bg-[#326E3B] hover:bg-[#2a5a32]  text-white px-[32px] py-[16px] font-bold text-[16px]transition-colors duration-200 flex items-center gap-2'
+                  className='bg-[#326E3B] hover:bg-[#2a5a32] text-white px-[32px] py-[16px] font-bold text-[16px] transition-colors duration-200 flex items-center gap-2 rounded-md cursor-pointer'
                   aria-label='Show less product components'
                 >
                   Show Less
