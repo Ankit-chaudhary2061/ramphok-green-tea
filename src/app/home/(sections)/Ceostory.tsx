@@ -16,7 +16,7 @@ const StorySection = () => {
   return (
     <>
       <div className='container mx-auto'>
-        <div className='py-[100px] px-[33px]'>
+        <div className='py-[100px] px-[27px]'>
           <div className='grid grid-cols-12 gap-6 items-start w-full'>
             <div className='col-span-5 self-center' data-aos='zoom-in-up'>
               <h2 className='text-[32px] leading-[32px] text-[000000] font-bold'>
@@ -31,13 +31,16 @@ const StorySection = () => {
                 on a sunny afternoon, green tea offers a refreshing ritual that
                 soothes the body and mind.
               </p>
-              <button className='bg-[#326E3B] hover:bg-green-800 transition'>
-                <p className='text-[16px] font-bold leading-[16px] text-white py-[16px] px-[32px] font-merriweather'>
+              <button className='bg-[#326E3B] hover:bg-green-800 transition-all duration-300 rounded-lg shadow-md hover:shadow-lg cursor-pointer'>
+                <p className='text-[16px] font-bold leading-[16px] text-white py-[16px] px-[32px] font-merriweather text-center'>
                   Learn More
                 </p>
               </button>
             </div>
-            <div className='col-start-7 col-span-6' data-aos='zoom-in-up'>
+            <div
+              className='col-start-7 col-span-6 rounded-xl overflow-hidden '
+              data-aos='zoom-in-up'
+            >
               <Image
                 src='/image/rampokh-about-us.jpg'
                 alt='Green Tea'

@@ -16,16 +16,16 @@ const Product = () => {
   return (
     <div className='bg-[rgb(247,244,244)] w-full '>
       <div className='container mx-auto '>
-        <div className='pt-[64px] px-[33px] '>
+        <div className='pt-[64px] px-[27px] '>
           <div className='grid grid-cols-12 gap-6 items-start w-full'>
             <div className='col-span-12' data-aos='zoom-in-up'>
-              <h2 className='text-[32px] leading-[32px] font-bold'>We Serve</h2>
+              <h2 className='text-[32px] leading-[32px] font-bold'>Our Products</h2>
               <div
                 className='py-[54px] grid grid-cols-12 gap-6 items-center w-full'
                 data-aos='zoom-in-up'
               >
                 {/* Image section */}
-                <div className='col-span-6 mb-[32px] relative h-[350px]'>
+                <div className='col-span-6 mb-[32px] relative h-[350px] rounded-xl overflow-hidden'>
                   <Image
                     src='/image/rampokh-about-us.jpg'
                     alt='Green Tea'
@@ -68,7 +68,7 @@ const Product = () => {
                 </div>
                 {/* Image section */}
                 <div
-                  className='col-start-7 col-span-6 mb-[32px] relative h-[350px]'
+                  className='col-start-7 col-span-6 mb-[32px] relative h-[350px] rounded-xl overflow-hidden'
                   data-aos='zoom-in-up'
                 >
                   <Image
@@ -81,7 +81,7 @@ const Product = () => {
                 </div>
                 {/* Image section */}
                 <div
-                  className='col-span-6 mb-[32px] relative h-[350px]'
+                  className='col-span-6 mb-[32px] relative h-[350px] rounded-xl overflow-hidden'
                   data-aos='zoom-in-up'
                 >
                   <Image

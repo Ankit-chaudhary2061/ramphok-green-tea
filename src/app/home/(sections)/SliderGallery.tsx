@@ -22,7 +22,7 @@ const SliderGallery = () => {
   })
   return (
     <div className='container mx-auto ' data-aos='zoom-in-up'>
-      <div className='pb-[109px]'>
+      <div className='pb-[109px] px-[27px]'>
         <div className='relative h-[419px]'>
           {/* Buttons centered vertically at 419px height */}
           <button
