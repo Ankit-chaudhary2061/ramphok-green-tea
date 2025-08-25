@@ -63,9 +63,9 @@ const ContactSection = () => {
           >
             <h2 className='text-2xl font-semibold text-gray-800'>Contact Us</h2>
             <p className='text-gray-500 mt-2 mb-6'>
-              We’d love to hear from you! Whether you have questions about our
-              teas, need help with an order, or simply want to share your tea
-              experience, we’re here to help.
+              Whether you have questions about our teas, need assistance with an
+              order, or simply want to share your tea experience, our team is
+              here to help.
               <br />
               Feel free to contact us any time. We will get back to you as soon
               as we can!
@@ -154,14 +154,14 @@ const ContactSection = () => {
             <div className='bg-gray-100 p-5 rounded-xl shadow flex items-start space-x-3'>
               <Phone className='w-6 h-6 text-blue-600' />
               <p>
-                1800-123-456 <br /> Mon–Sat: 8:00 am – 6:00 pm
+                1800-123-456 <br /> Mon&ndash;Sat: 8:00 am &ndash; 6:00 pm
               </p>
             </div>
 
             <div className='bg-gray-100 p-5 rounded-xl shadow flex items-start space-x-3'>
               <Mail className='w-6 h-6 text-blue-600' />
               <div>
-                <p>We’re ready to reply within 24 hours</p>
+                <p>We&apos;re ready to reply within 24 hours</p>
                 <a
                   href='https://mail.google.com/mail/?view=cm&fs=1&to=shresthathakur@gmail.com'
                   className='text-blue-600 hover:underline'
