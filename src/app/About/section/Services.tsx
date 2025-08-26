@@ -27,7 +27,7 @@ const services = [
 const Services = () => {
   return (
     <section className='container mx-auto'>
-      <div className='pb-[50px] px-[27px]'>
+      <div className='pb-[50px] '>
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
           {services.map((service, index) => {
             const Icon = service.icon;
@@ -39,7 +39,7 @@ const Services = () => {
                 data-aos-delay={service.delay}
               >
                 <div className='flex items-center justify-center mb-4'>
-                  <Icon className='w-10 h-10 text-blue-600' />
+                  <Icon className='w-10 h-10 text-[#326E3B]' />
                 </div>
                 <h4 className='text-xl font-semibold text-gray-800 mb-2'>
                   {service.title}

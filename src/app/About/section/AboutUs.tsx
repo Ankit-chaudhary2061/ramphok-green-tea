@@ -138,9 +138,9 @@ const AboutUsSection = () => {
 
   return (
     <section className='container mx-auto'>
-      <div className='py-[50px] px-[27px]'>
+      <div className='py-[50px] '>
         {/* CEO Story Grid */}
-        <div className='grid grid-cols-12 gap-6 items-start w-full'>
+        <div className='grid grid-cols-12 gap-6 items-center w-full'>
           {/* CEO Text */}
           <div
             className='col-span-12 md:col-span-4 self-center'
