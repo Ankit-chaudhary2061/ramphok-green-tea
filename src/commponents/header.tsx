@@ -28,7 +28,7 @@ const Header = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className='hover:text-gray-200 hover:scale-110 cursor-pointer transition duration-300'>
-            <Link href='/About'>About Us</Link>
+            <Link href='/about'>About Us</Link>
           </li>
           <li className='hover:text-gray-200 hover:scale-110 cursor-pointer transition duration-300'>
             <Link href='/Contact'>Contact Us</Link>
