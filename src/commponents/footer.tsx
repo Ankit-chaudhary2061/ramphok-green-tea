@@ -25,8 +25,8 @@ const Footer = () => {
         {/* Navigation Links */}
         <div className='col-span-12 lg:col-span-4 pt-6 flex justify-center gap-6 text-white text-[14px] font-normal'>
           <Link href='/'>Home</Link>
-          <Link href='/About'>About Us</Link>
-          <Link href='/Contact'>Contact Us</Link>
+          <Link href='/about'>about Us</Link>
+          <Link href='/contact'>contact Us</Link>
         </div>
 
         {/* Contact Info */}
