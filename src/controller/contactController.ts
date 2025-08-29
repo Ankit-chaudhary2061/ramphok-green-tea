@@ -2,7 +2,7 @@ import db from '@/lib/database';
 import sendMail from '@/lib/sendMail';
 import { ResultSetHeader } from 'mysql2';
 
-interface ContactData {
+export interface ContactData {
   firstName: string;
   lastName: string;
   email: string;
@@ -34,18 +34,22 @@ export const SaveContactMessage = async (data: ContactData) => {
     [firstName, lastName, email, description]
   );
 
-  // SEND EMAIL
-await sendMail({
-  to: process.env.CONTACT_RECEIVER_EMAIL!, // MUST be defined in .env
-  subject: `New message from ${firstName} ${lastName}`,
-  text: `Message from ${firstName} ${lastName}\nEmail: ${email}\n\n${description}`,
-  html: `
+  // Send email
+  if (!process.env.CONTACT_RECEIVER_EMAIL) {
+    throw new Error('No contact receiver email set in .env');
+  }
+
+  await sendMail({
+    to: process.env.CONTACT_RECEIVER_EMAIL,
+    subject: `New message from ${firstName} ${lastName}`,
+    text: `Message from ${firstName} ${lastName}\nEmail: ${email}\n\n${description}`,
+    html: `
       <h2>New Contact Form Submission</h2>
       <p><strong>Name:</strong> ${firstName} ${lastName}</p>
       <p><strong>Email:</strong> ${email}</p>
       <p><strong>Message:</strong> ${description}</p>
     `,
-});
+  });
 
   return result.insertId;
 };
