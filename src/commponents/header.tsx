@@ -28,10 +28,10 @@ const Header = () => {
             <Link href='/'>Home</Link>
           </li>
           <li className='hover:text-gray-200 hover:scale-110 cursor-pointer transition duration-300'>
-            <Link href='/about'>About Us</Link>
+            <Link href='/About'>About Us</Link>
           </li>
           <li className='hover:text-gray-200 hover:scale-110 cursor-pointer transition duration-300'>
-            <Link href='/contact'>Contact Us</Link>
+            <Link href='/Contact'>Contact Us</Link>
           </li>
         </ul>
 
