@@ -24,24 +24,42 @@ const ContactSection = () => {
 
  
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSending(true);
-    // console.log({ form });
-    try {
-      await axios.post('/api/contact', form);
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setIsSending(true);
+  //   // console.log({ form });
+  //   try {
+  //     await axios.post('/api/contact', form);
 
-      setForm({ firstName: '', lastName: '', email: '', description: '' });
-      setSuccessMessage('Message sent successfully!');
-      setTimeout(() => setSuccessMessage(''), 3000);
-    } catch (error) {
-      setSuccessMessage('Something went wrong. Please try again.');
-      setTimeout(() => setSuccessMessage(''), 3000);
-      console.error(error);
-    } finally {
-      setIsSending(false);
-    }
-  };
+  //     setForm({ firstName: '', lastName: '', email: '', description: '' });
+  //     setSuccessMessage('Message sent successfully!');
+  //     setTimeout(() => setSuccessMessage(''), 3000);
+  //   } catch (error) {
+  //     setSuccessMessage('Something went wrong. Please try again.');
+  //     setTimeout(() => setSuccessMessage(''), 3000);
+  //     console.error(error);
+  //   } finally {
+  //     setIsSending(false);
+  //   }
+  // };
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSending(true);
+
+  try {
+    await axios.post(`${process.env.NEXT_PUBLIC_HOST_URL}/api/contact`, form);
+
+    setForm({ firstName: '', lastName: '', email: '', description: '' });
+    setSuccessMessage('Message sent successfully!');
+    setTimeout(() => setSuccessMessage(''), 3000);
+  } catch (error) {
+    console.error('❌ Error sending form:', error);
+    setSuccessMessage('Something went wrong. Please try again.');
+    setTimeout(() => setSuccessMessage(''), 3000);
+  } finally {
+    setIsSending(false);
+  }
+};
 
   return (
     <div className='container mx-auto '>
