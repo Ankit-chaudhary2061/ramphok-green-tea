@@ -1,12 +1,14 @@
-import AboutUsSection from "../About/section/AboutUs";
-import Services from "./section/Services";
+import AboutUsSection from "./section/AboutUsSection"
+import Services from "./section/Services"
 
-const About = () => {
-  return (<>
-    <AboutUsSection/>
-    <Services/>
-    </>
-  );
-};
 
-export default About;
+
+const About =()=>{
+    return(
+        <>
+        <AboutUsSection/>
+        <Services/>
+        </>
+    )
+}
+export default About
