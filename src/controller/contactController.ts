@@ -52,6 +52,7 @@ export const SaveContactMessage = async (data: ContactData) => {
   }
 
   const receiver = process.env.CONTACT_RECEIVER_EMAIL;
+  console.log(process.env.CONTACT_RECEIVER_EMAIL);
   if (!receiver) {
     console.error('❌ CONTACT_RECEIVER_EMAIL not set.');
     throw new Error('Contact receiver email not configured.');
